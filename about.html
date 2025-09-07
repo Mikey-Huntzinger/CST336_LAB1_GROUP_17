@@ -7,46 +7,39 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #0a3266;">
+<body>
     <div id="container">
         <header>
-            <h1 style="text-align: center; background: black; color: white; margin: 0; padding: 20px 0;">About</h1>
-
-                        <nav style="display: flex; justify-content: center; margin-top: 20px;"></nav>
-                <a href="index.html" style="background: gold; color: #222; text-decoration: none; padding: 12px 32px; margin: 0 12px; border-radius: 8px; font-weight: bold; font-size: 1.1em; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s, color 0.2s;">
-                    Home
-                </a>
-                <a href="about.html" style="background: gold; color: #222; text-decoration: none; padding: 12px 32px; margin: 0 12px; border-radius: 8px; font-weight: bold; font-size: 1.1em; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s, color 0.2s;">
-                    About
-                </a>
-                <a href="contact.html" style="background: gold; color: #222; text-decoration: none; padding: 12px 32px; margin: 0 12px; border-radius: 8px; font-weight: bold; font-size: 1.1em; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s, color 0.2s;">
-                    Contact
-                </a>
+            <h1 class="main-title">About</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
         </header>
 
         <main>
             <div id="experience">
-                <div style="display: flex; justify-content: center; margin: 32px 0;">
-                    <table style="border-collapse: collapse; min-width: 350px; background: #fffbe7; box-shadow: 0 2px 12px rgba(0,0,0,0.07); border-radius: 10px; overflow: hidden;">
+                <div class="table-container">
+                    <table>
                         <thead>
-                            <tr style="background: gold;">
-                                <th style="padding: 14px 28px; font-size: 1.1em; border-bottom: 2px solid #e0c200; color: #222; text-align: left;">Programming Language</th>
-                                <th style="padding: 14px 28px; font-size: 1.1em; border-bottom: 2px solid #e0c200; color: #222; text-align: left;">Years Experience</th>
+                            <tr>
+                                <th>Programming Language</th>
+                                <th>Years Experience</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="padding: 12px 28px; border-bottom: 1px solid #f3e7b3;">Java</td>
-                                <td style="padding: 12px 28px; border-bottom: 1px solid #f3e7b3;">1</td>
-                            </tr>
-                            <tr style="background: #fff8d6;">
-                                <td style="padding: 12px 28px; border-bottom: 1px solid #f3e7b3;">C++</td>
-                                <td style="padding: 12px 28px; border-bottom: 1px solid #f3e7b3;">1</td>
+                                <td>Java</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td style="padding: 12px 28px;">Python</td>
-                                <td style="padding: 12px 28px;">2</td>
+                                <td>C++</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>2</td>
                             </tr>
                         </tbody>
                     </table>
@@ -54,11 +47,11 @@
             </div>
 
             <div id="hobbies">
-                <h2 style="color: white;">Common Hobbies Shared</h2>
-                <ul style="color: white;"></ul>
-                    <li style="color: #dcf408;">Watching Movies: We enjoy Watching Movies, especially Action Movies!</li>
-                    <li style="color: #dcf408;">Video Games: We enjoy playing Video Games ALOT! Especially Story mode games!</li>
-                    <li style="color: #dcf408;">Sports: We actively follow and play various Sports. We follow and play soccer the most!</li>
+                <h2>Common Hobbies Shared</h2>
+                <ul>
+                    <li>Watching Movies: We enjoy Watching Movies, especially Action Movies!</li>
+                    <li>Video Games: We enjoy playing Video Games ALOT! Especially Story mode games!</li>
+                    <li>Sports: We actively follow and play various Sports. We follow and play soccer the most!</li>
                 </ul>
             </div>
         </main>

@@ -2,7 +2,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
     font-size: 18px;
-    background-color: rgb(194, 224, 255);
+    background-color: #0a3266;
     color: white;
     text-align: center;
 }
@@ -28,6 +28,9 @@ header h1 {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
     background-color: rgb(48, 35, 17);
     padding: 20px;
     border-radius: 20px;
@@ -35,15 +38,25 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white;
-    background-color: rgb(22, 13, 0);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    color: #222;
+    background: gold;
+    padding: 12px 32px;
+    margin: 0 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a.active {
+    /* Optionally highlight the active page */
+    border: 2px solid #e0c200;
 }
 
 nav a:hover {
     background-color: rgb(29, 63, 123);
+    color: white;
 }
 
 /* Index/Home Page Styling */
@@ -51,6 +64,7 @@ nav a:hover {
 #members {
     display: flex;
     justify-content: center;
+    gap: 40px;
     align-content: center;
     padding: 20px;
 }
@@ -61,6 +75,7 @@ nav a:hover {
 }
 
 .individuals {
+    text-align: center;
     padding: 20px;
 }
 
@@ -68,31 +83,69 @@ nav a:hover {
     text-align: center;
 }
 
+#bottomText {
+    margin-top: 30px;
+}
+
 /* About Page Styling */
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
 
 table, table td, table th {
     border: 5px solid rgb(0, 7, 35);
 }
 
 table {
-    background-color: rgb(194, 224, 255);
-    color: rgb(0, 7, 35);
+    border-collapse: collapse;
+    min-width: 350px;
+    background: #fffbe7;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-radius: 10px;
+    overflow: hidden;
     margin: auto;
     padding: 5px;
+    color: rgb(0, 7, 35);
 }
 
-#experience {
-    padding: 20px;
+table th {
+    background: gold;
+    padding: 14px 28px;
+    font-size: 1.1em;
+    border-bottom: 2px solid #e0c200;
+    color: #222;
+    text-align: left;
+}
+
+table td {
+    padding: 12px 28px;
+    border-bottom: 1px solid #f3e7b3;
+}
+
+table tr:nth-child(2) {
+    background: #fff8d6;
 }
 
 #hobbies {
     padding: 20px;
 }
 
+#hobbies h2 {
+    color: white;
+}
+
 #hobbies ul {
+    color: white;
     text-align: left;
     display: inline-block;
     margin: auto;
+}
+
+#hobbies li {
+    color: #dcf408;
 }
 
 footer {
@@ -104,4 +157,20 @@ footer {
 
 footer img {
     width: 100px;
+}
+
+.contact-main {
+    background-color: #0a3266;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.contact-form {
+    background: #0a3266;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    border: none;
 }
